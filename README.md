@@ -50,36 +50,26 @@ Step by step on how to reproduce the results.
 
 ## 4. Data + Methods 
 
-Placeholders: 
+Placeholders and Images:
 The data section includes surface velocity, ice surface elevations, bed elevation, ice thickness, etc. 
 
-Placeholders: 
-Preprocess data: reproject all datasets to a common polar stereographic CRS.
+Placeholders and Images: 
+ - Sequential Gaussian Simulation (SGS): Use a variogram model derived from the radar data to generate stochastic bed realizations and preserve realistic small-scale roughness in bed elevation.
 
-Clip to the Rutford study region and create a regular grid.
+ - Mass-Conserving Adjustment (MCMC): Use Monte Carlo Markov Chains to adjust the SGS realizations and minimize a mass flux residual between modeled and observed ice flux.
 
-Initial bed estimate
+ - Evaluation: Compare the final bed to the initial product using:
+   - Variograms (for roughness)
+   - Maps of mass flux residual
+   - Visual comparison of cross-sections.
 
-Start from an existing bed product or simple interpolation of radar picks.
+  ## 5. Results: 
 
-Sequential Gaussian Simulation (SGS)
+  Placeholder Images: 
+  - Variogram Comparison
+  - Bed Elevation Maps
+  - Mass Flux Residuals
 
-Use a variogram model derived from the radar data to generate stochastic bed realizations.
+## 6. References:
 
-Preserve realistic small-scale roughness in bed elevation.
-
-Mass-Conserving Adjustment (MCMC)
-
-Use Monte Carlo Markov Chains to adjust the SGS realizations.
-
-Minimize a mass flux residual between modeled and observed ice flux.
-
-Evaluation
-
-Compare the final bed to the initial product using:
-
-Variograms (for roughness)
-
-Maps of mass flux residual
-
-Visual comparison of cross-sections.
+Readings cited here
