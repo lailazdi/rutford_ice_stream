@@ -63,12 +63,16 @@ Placeholders and Images:
    - Maps of mass flux residual
    - Visual comparison of cross-sections.
 
+---
+
   ## 5. Results: 
 
   Placeholder Images: 
   - Variogram Comparison
   - Bed Elevation Maps
   - Mass Flux Residuals
+
+---
 
 ## 6. References:
 
