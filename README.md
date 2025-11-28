@@ -24,13 +24,6 @@ Glacier bed topography strongly controls ice flow, grounding-line stability, and
 
  - Provide a reproducible workflow for future glaciology research  
 
-### (Placeholder Images):
-- Map of Rutford Ice Stream surface velocity (m/yr)
-- Velocity vectors overlaid
-- Grounding line shown in black
-- Study domain outlined
-Status: still an early draft, placeholders for data and figures.
-
 ---
 
 ## 2. Environment
