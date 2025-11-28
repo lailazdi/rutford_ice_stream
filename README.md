@@ -1,28 +1,28 @@
 # Bed Topography of the Rutford Ice Stream
-Authors: Laila Zaidi, Emma (Mickey) MacKie, Niya Shao
+Authors: Laila Zaidi, Dr. Emma (Mickey) MacKie, Niya Shao
 
-Description: this repository contains code and draft figures for estimating the bed topography beneath Rutford Ice Stream using mass-conserving interpolation methods. The current version is a work in progress with placeholder figures and partially complete analysis.
+This repository contains the full workflow for generating stochastic realizations of Rutford Ice Stream's bed topography and ice thickness through a new approach that uses geostatistical methods, particularly the Markov chain Monte Carlo (MCMC).
+
+This study is focused on the Rutford Ice Stream, located in West Antarctica, which flows rapidly between the Ellsworth Mountains and the Fletcher Promontory and into the Ronne Ice Shelf. Its fast flow speed, deep basal trough, and sensitivity to upstream and downstream forcing make it an ideal study site for exploring uncertainty in subglacial conditions.
 
 ---
 
-## 1. Overview
+## Study Area
+The Rutford Ice Stream is one of the most powerful ice streams on the continent, flowing ~1 km/year. Its deeply eroded trough, constrained by narrow mountain walls, makes its subglacial topography both difficult to measure and essential for ice-dynamic modeling (Doake et al.).
 
-Glacier bed topography strongly controls ice flow, grounding-line stability, and mass balance. However, direct measurements of the bed are sparse, so we need interpolation methods that are both realistic and physically consistent.
+---
 
-Write ~2-3 paragraphs explaining:
+## Project Overview
 
-Why bed topography matters for ice streams / glaciers.
+Glacier bed topography strongly controls ice flow, grounding-line stability, and mass balance. However, direct measurements of the bed are sparse, so we need interpolation methods that are both realistic and physically consistent. In this project, we aimed to:
 
-Why you chose Rutford Ice Stream.
+ - Estimate uncertain subglacial topography for Rutford Ice Stream
 
-What gap you are addressing (e.g., lack of data, need for mass-conserving interpolation).
+ - Generate multiple stochastic realizations using MCMC sampling
 
-Study Area: Rutford Ice Stream
+ - Analyze the uncertainty in the reconstructed bed
 
-Rutford Ice Stream is a fast-flowing ice stream in West Antarctica that drains into the Ronne Ice Shelf. It is known for high ice velocities and complex basal conditions.
-
-- **Region:** West Antarctica  
-- **Feature type:** Fast-flowing outlet / ice stream  
+ - Provide a reproducible workflow for future glaciology research  
 
 ### (Placeholder Images):
 - Map of Rutford Ice Stream surface velocity (m/yr)
