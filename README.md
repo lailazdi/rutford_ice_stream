@@ -76,4 +76,4 @@ Placeholders and Images:
 
 ## 6. References:
 
-Readings cited here
+Doake, C.S.M., et al. “Rutford Ice Stream, Antarctica - British Antarctic Survey.” British Antarctic Survey, Aug. 2025, www.bas.ac.uk/data/our-data/publication/rutford-ice-stream-antarctica/.
