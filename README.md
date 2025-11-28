@@ -36,20 +36,12 @@ Glacier bed topography strongly controls ice flow, grounding-line stability, and
 
 ---
 
-## Workflow Figures
-Input Data: 
+## Results
+Refer to Figures folder for topography and uncertainty for input data
 
-![Bed Topography]
+![Bed Realizations](Figures/bed_realizations.png)
 
-![BedMap Uncertainty]
-
-Output Data: 
-
-![Bed Realizations]
-
-![MCMC Loss]
-
-![Updated]
+![MCMC Loss](Updated_MCMC_Loss.png)
 
 --- 
 
