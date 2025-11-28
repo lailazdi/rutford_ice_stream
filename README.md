@@ -1,5 +1,5 @@
 # Bed Topography of the Rutford Ice Stream
-Authors: Laila Zaidi, Dr. Emma (Mickey) MacKie, Niya Shao
+### Authors: Laila Zaidi, Dr. Emma (Mickey) MacKie, Niya Shao
 
 This repository contains the full workflow for generating stochastic realizations of Rutford Ice Stream's bed topography and ice thickness through a new approach that uses geostatistical methods, particularly the Markov chain Monte Carlo (MCMC).
 
@@ -37,53 +37,56 @@ Glacier bed topography strongly controls ice flow, grounding-line stability, and
 ---
 
 ## Results
-Refer to Figures folder for topography and uncertainty for input data
+Refer to Figures folder for topography and uncertainty input images.
 
 ![Bed Realizations](Figures/bed_realizations.png)
 
-![MCMC Loss](Updated_MCMC_Loss.png)
+![MCMC loss](Figures/MCMC_loss.png)
 
 --- 
 
-Creat a conda environment with the necessary packages.  
-For example:  
+## Installation
+
+Refer to "Workflow Files" for .yml file of necessary packages
+
+Refer to gstatsMCMC.MCMC.html for documentation for MCMC.py
+
+From gstatsMCMC import Topography
+
+From gstatsMCMC import MCMC
+
+---
+
+## Usage 
+
+Creat a conda environment with the necessary packages. 
+
 conda env create -f environment.yml
-conda activate rutford_env
 
----
+conda activate gstatsMCMC
 
-## 3. Usage
+jupyter lab
 
-Step by step on how to reproduce the results. 
+Run each of the T1-T4.ipynb notebooks in order (T1_LoadData.ipynb, T2_StatisticalAnalysis.ipynb, T3_LargeScaleChain.ipynb, T4_SmallScaleChain.ipynb)
 
----
-
-## 4. Data + Methods 
-
-Placeholders and Images:
-The data section includes surface velocity, ice surface elevations, bed elevation, ice thickness, etc. 
-
-Placeholders and Images: 
- - Sequential Gaussian Simulation (SGS): Use a variogram model derived from the radar data to generate stochastic bed realizations and preserve realistic small-scale roughness in bed elevation.
-
- - Mass-Conserving Adjustment (MCMC): Use Monte Carlo Markov Chains to adjust the SGS realizations and minimize a mass flux residual between modeled and observed ice flux.
-
- - Evaluation: Compare the final bed to the initial product using:
-   - Variograms (for roughness)
-   - Maps of mass flux residual
-   - Visual comparison of cross-sections.
-
----
-
-  ## 5. Results: 
-
-  Placeholder Images: 
-  - Variogram Comparison
-  - Bed Elevation Maps
-  - Mass Flux Residuals
+**Refer to Labs folder to understand code usage and methods prior to running T1-T4 notebooks**
 
 ---
 
 ## 6. References:
 
 Doake, C.S.M., et al. “Rutford Ice Stream, Antarctica - British Antarctic Survey.” British Antarctic Survey, Aug. 2025, www.bas.ac.uk/data/our-data/publication/rutford-ice-stream-antarctica/.
+
+Shao, Niya, et al. “A Markov Chain Monte Carlo Approach for Geostatistically Simulating Mass-Conserving Subglacial Topography.” Eartharxiv.org, EarthArXiv, 26 June 2025, eartharxiv.org/repository/view/9499/. Accessed 28 Nov. 2025.
+
+--- 
+
+### Data Sources
+
+- BedMachine Antarctica v2
+
+- BedMap3
+
+- MEaSUREs velocity data
+
+- RADAR datasets
