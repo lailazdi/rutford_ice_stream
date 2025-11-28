@@ -10,6 +10,8 @@ This study is focused on the Rutford Ice Stream, located in West Antarctica, whi
 ## Study Area
 The Rutford Ice Stream is one of the most powerful ice streams on the continent, flowing ~1 km/year. Its deeply eroded trough, constrained by narrow mountain walls, makes its subglacial topography both difficult to measure and essential for ice-dynamic modeling (Doake et al.).
 
+![Rutford Ice Stream in Antarctica](Figures/Antarctica_Rutford.png)
+
 ---
 
 ## Project Overview
@@ -26,9 +28,19 @@ Glacier bed topography strongly controls ice flow, grounding-line stability, and
 
 ---
 
+## Methods
+
+- Sequential Gaussian Simulation (SGS): Uses a variogram model derived from the radar data to generate stochastic bed realizations and preserve realistic small-scale roughness in bed elevation.
+
+ - Markov Chain Monte Carlo (MCMC): Use Chains to adjust the SGS realizations and minimize a mass flux residual between modeled and observed ice flux. This produces thousands of realizations after chain convergence.
+
+![Bed Realizations (SGS and MCMC)]
+
+---
+
 ## 2. Environment
 
-We recommend creating a conda (or R) environment with the necessary packages.  
+Creat a conda environment with the necessary packages.  
 For example:  
 conda env create -f environment.yml
 conda activate rutford_env
