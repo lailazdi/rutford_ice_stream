@@ -24,7 +24,7 @@ Glacier bed topography strongly controls ice flow, grounding-line stability, and
 
  - Analyze the uncertainty in the reconstructed bed
 
- - Provide a reproducible workflow for future glaciology research  
+ - Provide a reproducible workflow for future glaciology research
 
 ---
 
@@ -34,11 +34,24 @@ Glacier bed topography strongly controls ice flow, grounding-line stability, and
 
  - Markov Chain Monte Carlo (MCMC): Use Chains to adjust the SGS realizations and minimize a mass flux residual between modeled and observed ice flux. This produces thousands of realizations after chain convergence.
 
-![Bed Realizations (SGS and MCMC)]
-
 ---
 
-## 2. Environment
+## Workflow Figures
+Input Data: 
+
+![Bed Topography]
+
+![BedMap Uncertainty]
+
+Output Data: 
+
+![Bed Realizations]
+
+![MCMC Loss]
+
+![Updated]
+
+--- 
 
 Creat a conda environment with the necessary packages.  
 For example:  
